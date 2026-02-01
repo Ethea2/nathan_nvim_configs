@@ -13,7 +13,6 @@ return {
 			ensure_installed = {
 				"lua",
 				"tsx",
-				"jsx",
 				"typescript",
 				"javascript",
 				"go",
