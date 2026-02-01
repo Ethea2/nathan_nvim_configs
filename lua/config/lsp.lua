@@ -13,12 +13,5 @@ vim.api.nvim_create_autocmd("LspAttach", {
 
 		opts.desc = "Restarts lsp server"
 		keymap.set("n", "<leader>rs", ":LspRestart<CR>", opts)
-
-		vim.api.nvim_create_autocmd("BufWritePre", {
-			buffer = ev.buf,
-			callback = function()
-				vim.lsp.buf.format { async = false, id = ev.data.client_id }
-			end
-		})
-	end
+	end,
 })
