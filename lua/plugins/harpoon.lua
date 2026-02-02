@@ -43,7 +43,7 @@ return {
 		keymap.set("n", "<C-p>", function()
 			harpoon:list():prev()
 		end)
-		keymap.set("n", "<C-n", function()
+		keymap.set("n", "<C-n>", function()
 			harpoon:list():next()
 		end)
 	end,
